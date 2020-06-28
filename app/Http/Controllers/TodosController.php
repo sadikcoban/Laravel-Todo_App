@@ -58,7 +58,7 @@ class TodosController extends Controller
 
     public function update(Todo $todo){
         $this->validate(request(), [
-            "name" =>"required |min:5|max:30",
+            "name" =>"required |min:5|max:40",
             "description" => "required|max:300"
         ]);
 
